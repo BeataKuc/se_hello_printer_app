@@ -11,8 +11,8 @@ run:
 	python main.py
 
 test:
-	PYTHONPATH=. py.test
-	PYTHONPATH=. py.test  --verbose -s
+	PYTHONPATH=. py.test  --verbose -s --ignore=test_ui
+
 
 test_smoke:
 	curl --fail 127.0.0.1:5000
